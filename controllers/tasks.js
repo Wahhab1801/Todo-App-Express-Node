@@ -8,7 +8,7 @@ const getAllTasks = asyncWrapper( async (req, res)=>{
         // res.status(200).json({ tasks, amount:tasks.length })
         res
             .status(200)
-            .json({ status:'success', data:{tasks, nbHits:tasks.length} })
+            .json({ tasks })
 })
 
 const createTask = asyncWrapper (async (req, res)=>{
